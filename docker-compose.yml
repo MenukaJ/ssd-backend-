@@ -1,13 +1,9 @@
----
-
 version: "3.8"
 services:
   api:
     build: .
-    image: api_spring-boot_java_hello-world:basic-role-based-access-control
-    env_file:
-      - .env
+    image: api_flask_python_hello-world:basic-rbac
     ports:
       - 6060:6060
-
-...
+    env_file:
+      - .env
